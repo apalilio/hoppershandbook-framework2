@@ -588,8 +588,9 @@ section {
     padding: 0;
     text-align: center;
 
-.clip0me {
-    clip: rect(110px, 160px, 170px, 60px); 
+.bunny {
+    clip: rect(110px, 160px, 170px, 60px);
+
 }
 
     /* SET HERO H1 TO BE JUMBO */
@@ -631,9 +632,12 @@ section {
 
     .site-footer-nav {
         ul {
-            list-style: none;
             margin: 0;
-            padding: 0;
+            padding: 2rem;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
     }
 }
@@ -687,14 +691,14 @@ section {
 .centered-card-group {
 
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: var(--unit-small);
     
     .centered-card {
         border: 1px solid #ccc;
         border-radius: 10px;
         padding: var(--unit-small);
-        min-width: 233px;
+        min-width: auto;
     }
 }
 
@@ -754,9 +758,9 @@ html {
 
 
   /* SUB NAV */
-  .sub-nav {
+.sub-nav {
     padding: 0;
-  }
+}
 
 .sub-nav nav {
     position: sticky;
@@ -833,6 +837,7 @@ html {
     background: #FFF8DE;
     padding: 6em 0;
     width: 100%;
+    text-align: center;
 }
 
 .section-two {
@@ -934,6 +939,58 @@ h2 {
     transform: rotateY(-180deg);
 
 }
+
+
+/* FLIP Card Test */
+
+
+.card-container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Put space between the cards */
+    gap: 30px; /* Optional: Adds gap between the flip cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+    padding: 5em;
+}
+
+.flip-card {
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front img, .flip-card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures images cover the whole area */
+}
+
+.flip-card-front {
+    background-color: #8FABB1; /* Can be removed if using images */
+}
+
+.flip-card-back {
+    background-color: #8FABB1; /* Can be removed if using images */
+    transform: rotateY(180deg);
+}
+
+
 
 
 

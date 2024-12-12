@@ -20,7 +20,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#care">Care</a></li>
                 <li><a href="#behavior">Behavior</a></li>
-                <li><a href="#anatomt">Anatomy</a></li>
+                <li><a href="#anatomy">Anatomy</a></li>
                 <li><a href="#breeds">Breeds</a></li>
             </ul>
         </nav>
@@ -30,7 +30,7 @@
         <section class="hero">
             <h3>Furry Friends</h3>
             <h1>Hoppers Handbook</h1>
-            <img class="clip-me" src="img/bunnyhop.gif" alt="bunny hopping across screen">
+            <img class="bunny" src="img/bunnyhops.gif" alt="bunny hopping across screen">
         </section>
 
         <!-- <section class="sub-nav">
@@ -56,10 +56,13 @@
                 </div>
             </div>
             </div>
+
+
+
         </section>
 
         <section class="section-two" id="care">
-
+            <!-- 
             <div class="section-heading-centered">
                 <h1>Care</h1>
             </div>
@@ -74,9 +77,146 @@
                     <img src="img/placeholder-2000x1500.jpg" width="300" height="400" />
                     <h2>Front</h2>
                 </div>
+            </div> -->
+
+            <div class="card-container">
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="front-image1.jpg" alt="Front Image 1">
+                            <h1>Diet</h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="back-image1.jpg" alt="Back Image 1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="back-image2.jpg" alt="Front Image 2">
+                            <h1>Grooming</h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="back-image2.jpg" height="100" width="100" alt="Back Image 2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="front-image3.jpg" alt="Front Image 3">
+                            <h1>Housing</h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="back-image3.jpg" alt="Back Image 3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="front-image4.jpg" alt="Front Image 4">
+                            <h1>Socializing</h1>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="back-image4.jpg" alt="Back Image 4">
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
+
+        <section class="section-three" id="behavior">
+
+            <div class="section-heading-centered">
+                <h1>Behavior</h1>
+            </div>
+            <div class="centered-card-group">
+                <div class="centered-card">
+                    <img src="img/placeholder-2000x1500.jpg" width="100" height="100" />
+                    <h3>Front</h3>
+                </div>
+                <div class="centered-card">
+                    <img src="img/placeholder-2000x1500.jpg" width="100" height="100" />
+                    <h3>Front</h3>
+                </div>
+            </div>
+            <div class="centered-card-group">
+                <div class="centered-card">
+                    <img src="img/placeholder-2000x1500.jpg" width="100" height="100" />
+                    <h3>Front</h3>
+                </div>
+                <div class="centered-card">
+                    <img src="img/placeholder-2000x1500.jpg" width="100" height="100" />
+                    <h3>Front</h3>
+                </div>
+            </div>
+            <div class="centered-card-group">
+                <div class="centered-card">
+                    <img src="img/placeholder-2000x1500.jpg" width="100" height="100" />
+                    <h3>Front</h3>
+                </div>
+                <div class="centered-card">
+                    <img src="img/placeholder-2000x1500.jpg" width="100" height="100" />
+                    <h3>Front</h3>
+                </div>
+            </div>
+
+            </div>
+
+
+
+        </section>
+
+        <section class="section-four" id="anatomy">
+
+            <div class="section-heading-centered">
+                <h1>Anatomy</h1>
+                <div class="centered-image">
+                    <img src="img/rabbit.png" alt="rabbit">
+                </div>
+
+        </section>
+
+
+        <section class="section-five" id="breed">
+
+            <div class="section-heading-centered">
+                <h1>Breed</h1>
+            </div>
+            <div class="centered-card-group">
+
+                <div class="centered-card">
+                    <img src="img/placeholder-2000x1500.jpg" width="100" height="100" />
+                    <h3>Front</h3>
+                </div>
+                <div class="centered-card">
+                    <img src="img/placeholder-2000x1500.jpg" width="100" height="100" />
+                    <h3>Front</h3>
+                </div>
+            </div>
+            <div class="centered-card-group">
+
+                <div class="centered-card">
+                    <img src="img/placeholder-2000x1500.jpg" width="100" height="100" />
+                    <h3>Front</h3>
+                </div>
+                <div class="centered-card">
+                    <img src="img/placeholder-2000x1500.jpg" width="100" height="100" />
+                    <h3>Front</h3>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
     </main>
 
     <footer class="site-footer">
@@ -92,6 +232,9 @@
         </nav>
         </div>
     </footer>
+
+    <!-- MAIN JS FILE -->
+    <script src="js/script.js"></script>
 
 </body>
 
